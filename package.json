@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
-  "author":{
-    "name": "Chenuvi",
-    "email": "chenuvi@outlook.com"
-  },
-  "license": "ISC"
+  "author": "Chenuvi <chenuvi@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  }
 }
