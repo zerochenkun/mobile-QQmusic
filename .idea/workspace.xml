@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d368ad87-0861-4e2d-867a-a423805fb589" name="Default Changelist" comment="" />
+    <list default="true" id="d368ad87-0861-4e2d-867a-a423805fb589" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/img.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.66d5da61.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.66d5da61.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.66d5da61.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.66d5da61.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.66d5da61.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.66d5da61.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.66d5da61.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.66d5da61.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_var.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_var.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="qqmusic" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ahiMfavzgYFD0DXfWxgOaSKRq0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,8 +47,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\my-project\mobile-qqmusic\scripts" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -30,6 +69,9 @@
       <option name="presentableId" value="Default" />
       <updated>1587194180574</updated>
       <workItem from="1587194185847" duration="20000" />
+      <workItem from="1587209216836" duration="551000" />
+      <workItem from="1587209844555" duration="266000" />
+      <workItem from="1587210175730" duration="6277000" />
     </task>
     <servers />
   </component>
@@ -41,10 +83,30 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1587202329506">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1587202329506" />
+    <state x="1220" y="265" key="FileChooserDialogImpl" timestamp="1587223917278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587223917278" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1587202491169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587202491169" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587210698963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587210698963" />
   </component>
 </project>

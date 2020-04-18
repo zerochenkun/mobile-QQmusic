@@ -11,7 +11,17 @@
   "author": "Chenuvi <chenuvi@outlook.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "images": "^3.0.2"
   }
 }

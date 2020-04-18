@@ -10,8 +10,41 @@ h1 {
   margin: 0;
 }
 
+#header {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  background: #31c27c;
+}
+#header h1 {
+  display: none;
+}
+#header #logo {
+  height: 25px;
+  margin-left: 10px;
+}
+
+.qq-slider {
+  width: 100%;
+  overflow: hidden;
+}
+.qq-slider .qq-slider-wrap {
+  display: flex;
+  transition: 0.3s;
+}
+.qq-slider .qq-slider-item {
+  flex-basis: 100%;
+}
+.qq-slider .qq-slider-item > a {
+  display: block;
+}
+.qq-slider .qq-slider-item > a img {
+  width: 100%;
+  display: block;
+}
+
 body {
-  background-color: #f44040;
+  background-color: #f4f4f4;
 }
 
 /*# sourceMappingURL=/app.66d5da61.css.map */
