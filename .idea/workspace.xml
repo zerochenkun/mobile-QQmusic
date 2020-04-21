@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d368ad87-0861-4e2d-867a-a423805fb589" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/img.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.66d5da61.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.66d5da61.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.66d5da61.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.66d5da61.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.66d5da61.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.66d5da61.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.66d5da61.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.66d5da61.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_var.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_var.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +58,9 @@
       <workItem from="1587209216836" duration="551000" />
       <workItem from="1587209844555" duration="266000" />
       <workItem from="1587210175730" duration="6277000" />
+      <workItem from="1587382827697" duration="637000" />
+      <workItem from="1587383481577" duration="602000" />
+      <workItem from="1587475784136" duration="170000" />
     </task>
     <servers />
   </component>
@@ -96,6 +85,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1587202329506" />
+    <state x="558" y="73" key="CommitChangelistDialog2" timestamp="1587225062806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="558" y="73" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587225062806" />
     <state x="1220" y="265" key="FileChooserDialogImpl" timestamp="1587223917278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

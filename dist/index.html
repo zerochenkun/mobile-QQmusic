@@ -12,9 +12,28 @@
     <h1>QQ 音乐</h1>
     <img src="/logo.6023b87e.png" alt="Logo" id="logo">
 </header>
-<div class="qq-slider" id="slider">
+<nav class="navbar">
+    <ul class="nav-list">
+        <li class="nav-item" data-role="tab" data-view=".rec-view">推荐</li>
+        <li class="nav-item" data-role="tab" data-view=".rank-view">排行榜</li>
+        <li class="nav-item" data-role="tab" data-view=".search-view">搜索</li>
+    </ul>
+</nav>
+<div class="tab-contents">
+    <div class="rec-view tab-content">
+        <div class="qq-slider" id="slider"></div>
+    </div>
+    <div class="rank-view tab-content hide">
+        排行榜
+    </div>
+    <div class="search-view tab-content hide">
+        搜索
+    </div>
 </div>
+
+
 <script src="/slider.6dfacfd0.js"></script>
+<script src="/tab.ba213b25.js"></script>
 <script src="/app.c09d0a7b.js"></script>
 </body>
 </html>
