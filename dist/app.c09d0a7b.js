@@ -118,15 +118,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"images/xiha.jpg":[function(require,module,exports) {
-module.exports = "./xiha.60489e2a.jpg";
+module.exports = "/xiha.60489e2a.jpg";
 },{}],"images/xgs.jpg":[function(require,module,exports) {
-module.exports = "./xgs.12ae5c89.jpg";
+module.exports = "/xgs.12ae5c89.jpg";
 },{}],"images/ljj.jpg":[function(require,module,exports) {
-module.exports = "./ljj.10a180df.jpg";
+module.exports = "/ljj.10a180df.jpg";
 },{}],"images/xl.jpg":[function(require,module,exports) {
-module.exports = "./xl.0cda7505.jpg";
+module.exports = "/xl.0cda7505.jpg";
 },{}],"images/joey.jpg":[function(require,module,exports) {
-module.exports = "./joey.5d6c78ba.jpg";
+module.exports = "/joey.5d6c78ba.jpg";
 },{}],"scripts/img.js":[function(require,module,exports) {
 "use strict";
 
@@ -302,7 +302,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49525" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53896" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
