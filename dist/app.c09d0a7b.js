@@ -335,8 +335,13 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   //   console.log('err: ', err)
   // })
 
-  (function renderSlider(json) {
-    var slides = json.data.slider.map(function (slide) {
+  (function render(json) {
+    renderSlider(json.data.slider);
+    renderRadio();
+  })(_rec.default);
+
+  function renderSlider(sli) {
+    var slides = sli.map(function (slide) {
       return {
         link: slide.linkUrl,
         image: slide.picUrl
@@ -346,7 +351,9 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
       el: document.querySelector('#slider'),
       slides: slides
     });
-  })(_rec.default);
+  }
+
+  function renderRadio() {}
 })();
 },{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -376,7 +383,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56227" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58346" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

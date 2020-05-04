@@ -14,15 +14,22 @@ import json from '/json/rec.json'
   //   console.log('err: ', err)
   // })
 
+  (function render (json) {
+    renderSlider(json.data.slider)
+    renderRadio ()
+  })(json)
 
-  (function renderSlider(json){
-    let slides = json.data.slider.map( slide => {
+  function renderSlider(sli){
+    let slides = sli.map( slide => {
       return { link:slide.linkUrl,image:slide.picUrl}
     })
     new Slider({
       el:document.querySelector('#slider'),
       slides
     })
-  })(json)
+  }
 
+  function renderRadio () {
+    
+  }
 })()
