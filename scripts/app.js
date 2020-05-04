@@ -1,19 +1,28 @@
 import * as imgs from './img'
 import Slider from './slider.js'
-// console.log('Slider ',Slider)
+import json from '/json/rec.json'
+
 
 (function() {
+  console.log('json: ', json);
 
-  let slider = new Slider({
-    el: document.querySelector('#slider'),
-    slides: [
-      { link: '#1', image:  imgs.img1},
-      { link: '#2', image: imgs.img2 },
-      { link: '#3', image: imgs.img3 },
-      { link: '#4', image: imgs.img4},
-      { link: '#5', image: imgs.img5 }
-    ]
-  })
+  //fetch本地文件容易出现跨域的问题，本地文件尽量使用 import export
+  // fetch('/json/rec.json')
+  // .then(res => res.json())
+  // .then(render)
+  // .catch(err => {
+  //   console.log('err: ', err)
+  // })
 
-  window.slider = slider
+
+  (function renderSlider(json){
+    let slides = json.data.slider.map( slide => {
+      return { link:slide.linkUrl,image:slide.picUrl}
+    })
+    new Slider({
+      el:document.querySelector('#slider'),
+      slides
+    })
+  })(json)
+
 })()

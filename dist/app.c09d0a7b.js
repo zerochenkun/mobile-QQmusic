@@ -238,6 +238,79 @@ var Slider = /*#__PURE__*/function () {
 }();
 
 exports.default = Slider;
+},{}],"json/rec.json":[function(require,module,exports) {
+module.exports = {
+  "code": 0,
+  "data": {
+    "slider": [{
+      "linkUrl": "http://y.qq.com/w/album.html?albummid=003wZwce0qD7oC",
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R720x288M000000LQe970vEsO9.jpg",
+      "id": 11781
+    }, {
+      "linkUrl": "http://y.qq.com/w/album.html?albummid=000128Gr4RsuUt",
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R720x288M000003KJFhQ1bHUe3.jpg",
+      "id": 11784
+    }, {
+      "linkUrl": "https://y.qq.com/m/digitalbum/gold/index.html?_video=true&id=2218592&g_f=shoujijiaodian",
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R720x288M000002s45e03cSE9g.jpg",
+      "id": 11767
+    }, {
+      "linkUrl": "http://y.qq.com/w/album.html?albummid=003wqRXy01mDkU",
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R720x288M00000460Dbk0AT72C.jpg",
+      "id": 11759
+    }, {
+      "linkUrl": "https://y.qq.com/msa/cdreview/0_4147.html",
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R720x288M000001Pewzz3ExqBS.jpg",
+      "id": 11504
+    }],
+    "radioList": [{
+      "picUrl": "http://y.gtimg.cn/music/photo/radio/track_radio_307_13_1.jpg",
+      "Ftitle": "一人一首招牌歌",
+      "radioid": 307
+    }, {
+      "picUrl": "http://y.gtimg.cn/music/photo/radio/track_radio_199_13_1.jpg",
+      "Ftitle": "热歌",
+      "radioid": 199
+    }],
+    "songList": [{
+      "songListDesc": "催泪大杀器！盘点演唱会经典万人大合唱",
+      "picUrl": "http://p.qpic.cn/music_cover/1Fr9IFMhWDPeUzWKVEjn3QTL2eX2QziaJmaL0ZAmsvtW71ic9IDUoYzg/300?n=1",
+      "id": "2646688496",
+      "accessnum": 4248898,
+      "songListAuthor": "Harry"
+    }, {
+      "songListDesc": "纳尼？这些华语歌手竟然会唱日语歌！",
+      "picUrl": "http://p.qpic.cn/music_cover/z8wAFqicQ1qhImeiajkrgiaR4hYM3pzsUULFnicXshFXdw9uGkm261Ex9g/300?n=1",
+      "id": "1144416825",
+      "accessnum": 603233,
+      "songListAuthor": "风吹草地"
+    }, {
+      "songListDesc": "精选内地十大民谣歌手代表作",
+      "picUrl": "http://p.qpic.cn/music_cover/hVUsfUFG2DV466URqw7PT7X66OknPIhic2mKDgicawN4qThIR7yhYY1w/300?n=1",
+      "id": "2043041547",
+      "accessnum": 698829,
+      "songListAuthor": "１'s   ヽ"
+    }, {
+      "songListDesc": "2016Billboard嘻哈榜精选",
+      "picUrl": "http://p.qpic.cn/music_cover/tkduvk4dwqBxwzZhsNe0nwkwyiaLHVkxtla7REsX0yNkhibOH3Bdb2og/300?n=1",
+      "id": "2040362185",
+      "accessnum": 1151148,
+      "songListAuthor": "　"
+    }, {
+      "songListDesc": "浮光掠影：ACG纯音乐赏析合辑",
+      "picUrl": "http://p.qpic.cn/music_cover/XMPAjfs5uwGZdWII3osvAvCRyNWx8Pqy5Yice41OCZlBhLtk0p0icNvg/300?n=1",
+      "id": "1723063372",
+      "accessnum": 851172,
+      "songListAuthor": "肥喵"
+    }, {
+      "songListDesc": "trip-hop单曲大推荐",
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T005R600x600M000002CJKAY1LKpcz.jpg?n=1",
+      "id": "3482605622",
+      "accessnum": 356499,
+      "songListAuthor": "哑忍"
+    }]
+  }
+};
 },{}],"scripts/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -245,36 +318,37 @@ var imgs = _interopRequireWildcard(require("./img"));
 
 var _slider = _interopRequireDefault(require("./slider.js"));
 
+var _rec = _interopRequireDefault(require("/json/rec.json"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-// console.log('Slider ',Slider)
 (function () {
-  var slider = new _slider.default({
-    el: document.querySelector('#slider'),
-    slides: [{
-      link: '#1',
-      image: imgs.img1
-    }, {
-      link: '#2',
-      image: imgs.img2
-    }, {
-      link: '#3',
-      image: imgs.img3
-    }, {
-      link: '#4',
-      image: imgs.img4
-    }, {
-      link: '#5',
-      image: imgs.img5
-    }]
-  });
-  window.slider = slider;
+  console.log('json: ', _rec.default); //fetch本地文件容易出现跨域的问题，本地文件尽量使用 import export
+  // fetch('/json/rec.json')
+  // .then(res => res.json())
+  // .then(render)
+  // .catch(err => {
+  //   console.log('err: ', err)
+  // })
+
+  (function renderSlider(json) {
+    var slides = json.data.slider.map(function (slide) {
+      return {
+        link: slide.linkUrl,
+        image: slide.picUrl
+      };
+    });
+    new _slider.default({
+      el: document.querySelector('#slider'),
+      slides: slides
+    });
+  })(_rec.default);
 })();
-},{"./img":"scripts/img.js","./slider.js":"scripts/slider.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -302,7 +376,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53896" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56227" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
