@@ -14,9 +14,11 @@ import json from '/json/rec.json'
   //   console.log('err: ', err)
   // })
 
-  (function render (json) {
-    renderSlider(json.data.slider)
-    renderRadio ()
+  (function render (jsonSource) {
+    renderSlider(jsonSource.data.slider)
+    renderRadio(jsonSource.data.radioList)
+    renderPlaylists(jsonSource.data.songList)
+
   })(json)
 
   function renderSlider(sli){
@@ -29,7 +31,29 @@ import json from '/json/rec.json'
     })
   }
 
-  function renderRadio () {
-    
+  function renderRadio (radios) {
+    document.querySelector('.radios .list').innerHTML = radios.map(radio => 
+      `<div class="list-item">
+        <div class="list-media">
+          <img class="lazyload" src="${radio.picUrl}">
+          <span class="icon icon-play"></span>
+          </div>
+          <div class="list-detail">
+          <h3 class="list-title">${radio.Ftitle}</h3>
+        </div>
+      </div>`).join('')
   }
+  function renderPlaylists (playlists) {
+    document.querySelector('.playlists .list').innerHTML = playlists.map(playlist => 
+      `<div class="list-item">
+        <div class="list-media">
+          <img class="lazyload" src="${playlist.picUrl}">
+          <span class="icon icon-play"></span>
+          </div>
+          <div class="list-detail">
+          <h3 class="list-title">${playlist.songListDesc}</h3>
+        </div>
+      </div>`).join('')
+  }
+
 })()

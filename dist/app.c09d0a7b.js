@@ -335,9 +335,10 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   //   console.log('err: ', err)
   // })
 
-  (function render(json) {
-    renderSlider(json.data.slider);
-    renderRadio();
+  (function render(jsonSource) {
+    renderSlider(jsonSource.data.slider);
+    renderRadio(jsonSource.data.radioList);
+    renderPlaylists(jsonSource.data.songList);
   })(_rec.default);
 
   function renderSlider(sli) {
@@ -353,7 +354,17 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
     });
   }
 
-  function renderRadio() {}
+  function renderRadio(radios) {
+    document.querySelector('.radios .list').innerHTML = radios.map(function (radio) {
+      return "<div class=\"list-item\">\n        <div class=\"list-media\">\n          <img class=\"lazyload\" src=\"".concat(radio.picUrl, "\">\n          <span class=\"icon icon-play\"></span>\n          </div>\n          <div class=\"list-detail\">\n          <h3 class=\"list-title\">").concat(radio.Ftitle, "</h3>\n        </div>\n      </div>");
+    }).join('');
+  }
+
+  function renderPlaylists(playlists) {
+    document.querySelector('.playlists .list').innerHTML = playlists.map(function (playlist) {
+      return "<div class=\"list-item\">\n        <div class=\"list-media\">\n          <img class=\"lazyload\" src=\"".concat(playlist.picUrl, "\">\n          <span class=\"icon icon-play\"></span>\n          </div>\n          <div class=\"list-detail\">\n          <h3 class=\"list-title\">").concat(playlist.songListDesc, "</h3>\n        </div>\n      </div>");
+    }).join('');
+  }
 })();
 },{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
