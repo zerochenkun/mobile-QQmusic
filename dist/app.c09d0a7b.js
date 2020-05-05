@@ -311,6 +311,337 @@ module.exports = {
     }]
   }
 };
+},{}],"json/rank.json":[function(require,module,exports) {
+module.exports = {
+  "code": 0,
+  "subcode": 0,
+  "message": "",
+  "default": 0,
+  "data": {
+    "topList": [{
+      "id": 4,
+      "listenCount": 20000000,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_203705594.jpg",
+      "songList": [{
+        "singername": "毛不易",
+        "songname": "借 (Live)"
+      }, {
+        "singername": "GAI",
+        "songname": "苦行僧 (Live)"
+      }, {
+        "singername": "红花会PG ONE",
+        "songname": "H.M.E (Live)"
+      }],
+      "topTitle": "巅峰榜·流行指数",
+      "type": 0
+    }, {
+      "id": 26,
+      "listenCount": 19500000,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_26_300_203691607.jpg",
+      "songList": [{
+        "singername": "Taylor Swift",
+        "songname": "Look What You Made Me Do"
+      }, {
+        "singername": "校长",
+        "songname": "带你去旅行"
+      }, {
+        "singername": "金志文",
+        "songname": "远走高飞 (独唱版)"
+      }],
+      "topTitle": "巅峰榜·热歌",
+      "type": 0
+    }, {
+      "id": 27,
+      "listenCount": 15400000,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_27_300_203691607.jpg",
+      "songList": [{
+        "singername": "Taylor Swift",
+        "songname": "Look What You Made Me Do"
+      }, {
+        "singername": "李荣浩",
+        "songname": "歌谣"
+      }, {
+        "singername": "王嘉尔",
+        "songname": "九州天空城"
+      }],
+      "topTitle": "巅峰榜·新歌",
+      "type": 0
+    }, {
+      "id": 50,
+      "listenCount": 11461250,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_50_300_203705575.jpg",
+      "songList": [{
+        "singername": "GAI",
+        "songname": "苦行僧 (Live)"
+      }, {
+        "singername": "红花会PG ONE",
+        "songname": "H.M.E (Live)"
+      }, {
+        "singername": "Tizzy T",
+        "songname": "头文字T (Live)"
+      }],
+      "topTitle": "巅峰榜·中国有嘻哈",
+      "type": 0
+    }, {
+      "id": 51,
+      "listenCount": 9900000,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_51_300_203705594.jpg",
+      "songList": [{
+        "singername": "毛不易",
+        "songname": "借 (Live)"
+      }, {
+        "singername": "毛不易",
+        "songname": "消愁 (Live)"
+      }, {
+        "singername": "毛不易",
+        "songname": "像我这样的人 (Live)"
+      }],
+      "topTitle": "巅峰榜·明日之子",
+      "type": 0
+    }, {
+      "id": 25,
+      "listenCount": 10000000,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_25_300_203702977.jpg",
+      "songList": [{
+        "singername": "莫安琪",
+        "songname": "刀马旦 (Live)"
+      }, {
+        "singername": "朱婷婷",
+        "songname": "父亲写的散文诗 (Live)"
+      }, {
+        "singername": "叶晓粤",
+        "songname": "母系社会 (Live)"
+      }],
+      "topTitle": "巅峰榜·中国新歌声",
+      "type": 0
+    }, {
+      "id": 28,
+      "listenCount": 15498810,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_28_300_202658270.jpg",
+      "songList": [{
+        "singername": "大壮",
+        "songname": "我们不一样"
+      }, {
+        "singername": "罗玉坤",
+        "songname": "最美情侣"
+      }, {
+        "singername": "赵方婧",
+        "songname": "尽头"
+      }],
+      "topTitle": "巅峰榜·网络歌曲",
+      "type": 0
+    }, {
+      "id": 5,
+      "listenCount": 8604340,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_5_300_203695796.jpg",
+      "songList": [{
+        "singername": "王嘉尔",
+        "songname": "Papillon（巴比龙）"
+      }, {
+        "singername": "周笔畅",
+        "songname": "七分钟好女孩 七分钟坏女孩"
+      }, {
+        "singername": "校长",
+        "songname": "带你去旅行"
+      }],
+      "topTitle": "巅峰榜·内地",
+      "type": 0
+    }, {
+      "id": 6,
+      "listenCount": 5417800,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_6_300_203639711.jpg",
+      "songList": [{
+        "singername": "莫文蔚",
+        "songname": "I Do"
+      }, {
+        "singername": "岑宁儿",
+        "songname": "追光者"
+      }, {
+        "singername": "杨宗纬",
+        "songname": "越过山丘"
+      }],
+      "topTitle": "巅峰榜·港台",
+      "type": 0
+    }, {
+      "id": 3,
+      "listenCount": 9300000,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_3_300_203691607.jpg",
+      "songList": [{
+        "singername": "Taylor Swift",
+        "songname": "Look What You Made Me Do"
+      }, {
+        "singername": "Martin Garrix",
+        "songname": "Pizza"
+      }, {
+        "singername": "Justin Bieber/BloodPop®",
+        "songname": "Friends"
+      }],
+      "topTitle": "巅峰榜·欧美",
+      "type": 0
+    }, {
+      "id": 16,
+      "listenCount": 7151940,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_16_300_203659397.jpg",
+      "songList": [{
+        "singername": "선미 (宣美)",
+        "songname": "가시나 (Gashina)"
+      }, {
+        "singername": "현아 (泫雅)",
+        "songname": "베베 (BABE)"
+      }, {
+        "singername": "킬라그램 (Killah Gramz)/딘 (DEAN)/지코 (Zico)",
+        "songname": "어디 (哪里)"
+      }],
+      "topTitle": "巅峰榜·韩国",
+      "type": 0
+    }, {
+      "id": 17,
+      "listenCount": 1940000,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_17_300_203649913.jpg",
+      "songList": [{
+        "singername": "初音ミク (初音未来)",
+        "songname": "神无月 (日文版)"
+      }, {
+        "singername": "中島美嘉 (なかしま みか)",
+        "songname": "电光石火之间"
+      }, {
+        "singername": "MACO (まこ)",
+        "songname": "恋の道 (恋爱的道路)"
+      }],
+      "topTitle": "巅峰榜·日本",
+      "type": 0
+    }, {
+      "id": 201,
+      "listenCount": 416391,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/20150127163830.jpg",
+      "songList": [{
+        "singername": "Taylor Swift",
+        "songname": "Look What You Made Me Do"
+      }, {
+        "singername": "현아",
+        "songname": "베베 (BABE)"
+      }, {
+        "singername": "王嘉尔",
+        "songname": "Papillon（巴比龙）"
+      }],
+      "topTitle": "巅峰榜·MV",
+      "type": 0
+    }, {
+      "id": 32,
+      "listenCount": 3106860,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_32_300_203705580.jpg",
+      "songList": [{
+        "singername": "红花会PG ONE",
+        "songname": "H.M.E (Live)"
+      }, {
+        "singername": "GAI",
+        "songname": "苦行僧 (Live)"
+      }, {
+        "singername": "赵雷",
+        "songname": "成都"
+      }],
+      "topTitle": "巅峰榜·音乐人",
+      "type": 0
+    }, {
+      "id": 36,
+      "listenCount": 4085540,
+      "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_36_300_201816153.jpg",
+      "songList": [{
+        "singername": "姜真祖",
+        "songname": "成都"
+      }, {
+        "singername": "郑阳亭",
+        "songname": "你那么爱他"
+      }, {
+        "singername": "胡慧",
+        "songname": "分手快乐"
+      }],
+      "topTitle": "巅峰榜·K歌金曲",
+      "type": 0
+    }]
+  }
+};
+},{}],"scripts/lazyload.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.lazyload = lazyload;
+
+function lazyload(imgs) {
+  imgs = Array.from(imgs); //1.1-懒加载： IntersectionObserver 较新API,老浏览器可能无法使用
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      console.log(entries);
+      entries.forEach(function (entry) {
+        if (entry.intersectionRatio > 0) {
+          loadImage(entry.target, function () {
+            observer.unobserve(entry.target);
+          });
+        }
+      });
+    }, {
+      threshold: 0.01
+    });
+    imgs.forEach(function (img) {
+      return observer.observe(img);
+    });
+  } else {
+    // 1.2-懒加载：旧方法，适用性好，但是代码多呀
+    var onscroll = throttle(function () {
+      if (imgs.length === 0) {
+        return window.removeEventListener('scroll', onscroll);
+      }
+
+      imgs = imgs.filter(function (img) {
+        return img.classList.contains('lazyload');
+      });
+      imgs.forEach(function (img) {
+        return inViewport(img) && loadImage(img);
+      });
+    }, 300);
+    window.addEventListener('scroll', onscroll); //   window.dispatchEvent(new Event('scroll'))
+  } // 2 时间戳节流
+
+
+  function throttle(func, wait) {
+    var prev, timer;
+    return function fn() {
+      var curr = Date.now();
+      var diff = curr - prev;
+
+      if (!prev || diff >= wait) {
+        func();
+        prev = curr;
+      }
+    };
+  }
+
+  function inViewport(img) {
+    var _img$getBoundingClien = img.getBoundingClientRect(),
+        top = _img$getBoundingClien.top,
+        left = _img$getBoundingClien.left,
+        right = _img$getBoundingClien.right,
+        bottom = _img$getBoundingClien.bottom;
+
+    var vpWidth = document.documentElement.clientWidth;
+    var vpHeight = document.documentElement.clientHeight;
+    return (top > 0 && top < vpHeight || bottom > 0 && bottom < vpHeight) && (left > 0 && left < vpWidth || right > 0 && right < vpWidth);
+  }
+
+  function loadImage(img, callback) {
+    var image = new Image();
+    image.src = img.dataset.src;
+
+    image.onload = function () {
+      img.src = image.src;
+      img.classList.remove('lazyload');
+      if (typeof callback === 'function') callback();
+    };
+  }
+}
 },{}],"scripts/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -320,6 +651,10 @@ var _slider = _interopRequireDefault(require("./slider.js"));
 
 var _rec = _interopRequireDefault(require("/json/rec.json"));
 
+var _rank = _interopRequireDefault(require("/json/rank.json"));
+
+var _lazyload = require("/scripts/lazyload.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
@@ -327,7 +662,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 (function () {
-  console.log('json: ', _rec.default); //fetch本地文件容易出现跨域的问题，本地文件尽量使用 import export
+  console.log('rankjson: ', _rank.default); //fetch本地文件容易出现跨域的问题，本地文件尽量使用 import export
   // fetch('/json/rec.json')
   // .then(res => res.json())
   // .then(render)
@@ -336,10 +671,14 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   // })
 
   (function render(jsonSource) {
+    console.log('render: ', render);
     renderSlider(jsonSource.data.slider);
     renderRadio(jsonSource.data.radioList);
     renderPlaylists(jsonSource.data.songList);
+    (0, _lazyload.lazyload)(document.querySelectorAll('.lazyload'));
   })(_rec.default);
+
+  renderTopList(_rank.default.data.topList);
 
   function renderSlider(sli) {
     var slides = sli.map(function (slide) {
@@ -355,18 +694,33 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   }
 
   function renderRadio(radios) {
+    console.log('radios: ', radios);
     document.querySelector('.radios .list').innerHTML = radios.map(function (radio) {
-      return "<div class=\"list-item\">\n        <div class=\"list-media\">\n          <img class=\"lazyload\" src=\"".concat(radio.picUrl, "\">\n          <span class=\"icon icon-play\"></span>\n          </div>\n          <div class=\"list-detail\">\n          <h3 class=\"list-title\">").concat(radio.Ftitle, "</h3>\n        </div>\n      </div>");
+      return "<div class=\"list-item\">\n        <div class=\"list-media\">\n          <img class=\"lazyload\" data-src=\"".concat(radio.picUrl, "\">\n          <span class=\"icon icon-play\"></span>\n          </div>\n          <div class=\"list-detail\">\n          <h3 class=\"list-title\">").concat(radio.Ftitle, "</h3>\n        </div>\n      </div>");
     }).join('');
   }
 
   function renderPlaylists(playlists) {
     document.querySelector('.playlists .list').innerHTML = playlists.map(function (playlist) {
-      return "<div class=\"list-item\">\n        <div class=\"list-media\">\n          <img class=\"lazyload\" src=\"".concat(playlist.picUrl, "\">\n          <span class=\"icon icon-play\"></span>\n          </div>\n          <div class=\"list-detail\">\n          <h3 class=\"list-title\">").concat(playlist.songListDesc, "</h3>\n        </div>\n      </div>");
+      return "<div class=\"list-item\">\n        <div class=\"list-media\">\n          <img class=\"lazyload\" data-src=\"".concat(playlist.picUrl, "\">\n          <span class=\"icon icon-play\"></span>\n          </div>\n          <div class=\"list-detail\">\n          <h3 class=\"list-title\">").concat(playlist.songListDesc, "</h3>\n        </div>\n      </div>");
     }).join('');
   }
+
+  function renderTopList(list) {
+    console.log('list: ', list);
+    document.querySelector('#rank-view .toplist').innerHTML = list.map(function (item) {
+      return "<li class=\"top-item\">\n      <div class=\"top-item-media\">\n        <a href=\"#\">\n          <img class=\"lazyload\" data-src=\"".concat(item.picUrl, "\">\n        </a>\n      </div>\n      <div class=\"top-item-info\">\n        <h3 class=\"top-item-title ellipsis\">").concat(item.topTitle, "</h3>\n        <ul class=\"top-item-list\">\n          ").concat(songlist(item.songList), "\n        </ul>\n      </div>\n    </li>");
+    }).join('');
+    (0, _lazyload.lazyload)(document.querySelectorAll('#rank-view .toplist .lazyload'));
+
+    function songlist(songs) {
+      return songs.map(function (song, i) {
+        return "<li class=\"top-item-song\">\n          <i class=\"song-index\">".concat(i + 1, "</i>\n          <span class=\"song-name\">").concat(song.songname, "</span>- ").concat(song.singername, "\n        </li>");
+      }).join('');
+    }
+  }
 })();
-},{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json","/json/rank.json":"json/rank.json","/scripts/lazyload.js":"scripts/lazyload.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -394,7 +748,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58346" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56524" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

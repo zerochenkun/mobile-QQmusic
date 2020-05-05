@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts/tab.js":[function(require,module,exports) {
+// 事件委托 （事件代理）
 document.addEventListener('click', function () {
   var target = event.target;
   if (target.dataset.role !== 'tab') return;
@@ -125,9 +126,12 @@ document.addEventListener('click', function () {
     tab.classList.remove('active');
   });
   target.classList.add('active');
-  var content = document.querySelector(target.dataset.view);
+  var content = document.querySelector(target.dataset.view); // '#rank-view'
 
   if (content) {
+    /*
+     * 排他思想
+     */
     [].forEach.call(content.parentElement.children, function (children) {
       children.style.display = 'none';
     });
@@ -162,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58346" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56524" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
