@@ -642,7 +642,7 @@ function lazyload(imgs) {
     };
   }
 }
-},{}],"scripts/search.js":[function(require,module,exports) {
+},{}],"scripts/Mysearch.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -664,8 +664,8 @@ var Search = /*#__PURE__*/function () {
     this.$input = this.$el.querySelector('#search');
     this.$songs = this.$el.querySelector('.song-list');
     this.$input.addEventListener('keyup', this.onKeyUp.bind(this));
-    this.keyword = ''; // this.songs = []
-
+    this.keyword = '';
+    this.songs = [];
     this.page = 1;
     this.perpage = 20;
     this.nomore = json.data.song.curpage;
@@ -705,7 +705,7 @@ var Search = /*#__PURE__*/function () {
       var _this = this;
 
       this.keyword = keyword;
-      fetch("http://localhost:4000/search?keyword=".concat(this.keywod, "&page=").concat(page || this.page)).then(function (res) {
+      fetch("http://localhost:4000/search?keyword=".concat(this.keyword, "&page=").concat(page || this.page)).then(function (res) {
         return res.json();
       }).then(function (json) {
         // this.page = this.data.song.curpage
@@ -744,7 +744,7 @@ var _rank = _interopRequireDefault(require("/json/rank.json"));
 
 var _lazyload = require("/scripts/lazyload.js");
 
-var _search = _interopRequireDefault(require("./search.js"));
+var _Mysearch = _interopRequireDefault(require("./Mysearch.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -769,7 +769,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   })(_rec.default);
 
   renderTopList(_rank.default.data.topList);
-  var search = new _search.default(document.querySelector('#search-view'));
+  var search = new _Mysearch.default(document.querySelector('#search-view'));
 
   function renderSlider(sli) {
     var slides = sli.map(function (slide) {
@@ -809,7 +809,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
     }
   }
 })();
-},{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json","/json/rank.json":"json/rank.json","/scripts/lazyload.js":"scripts/lazyload.js","./search.js":"scripts/search.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json","/json/rank.json":"json/rank.json","/scripts/lazyload.js":"scripts/lazyload.js","./Mysearch.js":"scripts/Mysearch.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -837,7 +837,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61247" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50533" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

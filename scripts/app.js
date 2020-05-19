@@ -3,7 +3,7 @@ import Slider from './slider.js'
 import json from '/json/rec.json'
 import rankjson from '/json/rank.json'
 import {lazyload} from '/scripts/lazyload.js'
-import Search from './search.js'
+import SearchAPI from './Mysearch.js'
 
 (function() {
   // console.log('rankjson: ', rankjson);
@@ -24,7 +24,7 @@ import Search from './search.js'
   })(json)
   renderTopList(rankjson.data.topList)
 
-  let search = new Search (document.querySelector('#search-view'))
+  let search = new SearchAPI (document.querySelector('#search-view'))
 
   function renderSlider(sli){
     let slides = sli.map( slide => {
