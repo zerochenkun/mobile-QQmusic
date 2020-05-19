@@ -3,10 +3,10 @@ import Slider from './slider.js'
 import json from '/json/rec.json'
 import rankjson from '/json/rank.json'
 import {lazyload} from '/scripts/lazyload.js'
-
+import Search from './search.js'
 
 (function() {
-  console.log('rankjson: ', rankjson);
+  // console.log('rankjson: ', rankjson);
 
   //fetch本地文件容易出现跨域的问题，本地文件尽量使用 import export
   // fetch('/json/rec.json')
@@ -17,13 +17,14 @@ import {lazyload} from '/scripts/lazyload.js'
   // })
 
   (function render (jsonSource) {
-    console.log('render: ', render);
     renderSlider(jsonSource.data.slider)
     renderRadio(jsonSource.data.radioList)
     renderPlaylists(jsonSource.data.songList)
     lazyload(document.querySelectorAll('.lazyload'))
   })(json)
   renderTopList(rankjson.data.topList)
+
+  let search = new Search (document.querySelector('#search-view'))
 
   function renderSlider(sli){
     let slides = sli.map( slide => {
@@ -36,7 +37,6 @@ import {lazyload} from '/scripts/lazyload.js'
   }
 
   function renderRadio (radios) {
-    console.log('radios: ', radios);
     document.querySelector('.radios .list').innerHTML = radios.map(radio => 
       `<div class="list-item">
         <div class="list-media">
@@ -61,7 +61,6 @@ import {lazyload} from '/scripts/lazyload.js'
       </div>`).join('')
   }
   function renderTopList(list) {
-    console.log('list: ', list);
     document.querySelector('#rank-view .toplist').innerHTML = list.map(item => 
       `<li class="top-item">
       <div class="top-item-media">

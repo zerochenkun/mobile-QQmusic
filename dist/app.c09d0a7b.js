@@ -642,6 +642,95 @@ function lazyload(imgs) {
     };
   }
 }
+},{}],"scripts/search.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Search = /*#__PURE__*/function () {
+  function Search(el) {
+    _classCallCheck(this, Search);
+
+    this.$el = el;
+    this.$input = this.$el.querySelector('#search');
+    this.$songs = this.$el.querySelector('.song-list');
+    this.$input.addEventListener('keyup', this.onKeyUp.bind(this));
+    this.keyword = ''; // this.songs = []
+
+    this.page = 1;
+    this.perpage = 20;
+    this.nomore = json.data.song.curpage;
+    this.onscroll = this.onScroll.bind(this);
+    window.addEventListener('scroll', this.onscroll);
+  }
+
+  _createClass(Search, [{
+    key: "onKeyUp",
+    value: function onKeyUp(event) {
+      var keyword = event.target.value.trim();
+      if (!keyword) return this.reset();
+      console.log('this: ', this);
+      console.log('event.target: ', event.target);
+      if (event.key !== 'Enter') return;
+      this.search(keyword);
+    }
+  }, {
+    key: "onScroll",
+    value: function onScroll() {
+      if (this.nomore) return;
+
+      if (document.documentElementClientHeight + pageYOffSet > document.body.scrollHeight - 50) {
+        this.search(this.keyword, this.page + 1);
+      }
+    }
+  }, {
+    key: "reset",
+    value: function reset() {
+      this.page = 1;
+      this.keyword = '';
+      this.songs = [];
+    }
+  }, {
+    key: "search",
+    value: function search(keyword, page) {
+      var _this = this;
+
+      this.keyword = keyword;
+      fetch("http://localhost:4000/search?keyword=".concat(this.keywod, "&page=").concat(page || this.page)).then(function (res) {
+        return res.json();
+      }).then(function (json) {
+        // this.page = this.data.song.curpage
+        return json.data.song.list;
+      }).then(function (songs) {
+        return _this.append(songs);
+      });
+    }
+  }, {
+    key: "append",
+    value: function append(songs) {
+      var html = songs.map(function (song) {
+        return "\n          <li class=\"song-item\">\n            <i class=\"icon icon-music\"></i>\n            <div class=\"song-name ellipsis\">".concat(song.songname, "</div>\n            <div class=\"song-artist ellipsis\">").concat(song.singer.map(function (s) {
+          return s.name;
+        }).join(' '), "</div>\n          </li>");
+      }).join('');
+      this.$songs.insertAdjacentHTML('beforeend', html);
+    } //todo 搜索无实际内容，都是undefined
+
+  }]);
+
+  return Search;
+}();
+
+exports.default = Search;
 },{}],"scripts/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -655,6 +744,8 @@ var _rank = _interopRequireDefault(require("/json/rank.json"));
 
 var _lazyload = require("/scripts/lazyload.js");
 
+var _search = _interopRequireDefault(require("./search.js"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
@@ -662,16 +753,15 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 (function () {
-  console.log('rankjson: ', _rank.default); //fetch本地文件容易出现跨域的问题，本地文件尽量使用 import export
+  // console.log('rankjson: ', rankjson);
+  //fetch本地文件容易出现跨域的问题，本地文件尽量使用 import export
   // fetch('/json/rec.json')
   // .then(res => res.json())
   // .then(render)
   // .catch(err => {
   //   console.log('err: ', err)
   // })
-
   (function render(jsonSource) {
-    console.log('render: ', render);
     renderSlider(jsonSource.data.slider);
     renderRadio(jsonSource.data.radioList);
     renderPlaylists(jsonSource.data.songList);
@@ -679,6 +769,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   })(_rec.default);
 
   renderTopList(_rank.default.data.topList);
+  var search = new _search.default(document.querySelector('#search-view'));
 
   function renderSlider(sli) {
     var slides = sli.map(function (slide) {
@@ -694,7 +785,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   }
 
   function renderRadio(radios) {
-    console.log('radios: ', radios);
     document.querySelector('.radios .list').innerHTML = radios.map(function (radio) {
       return "<div class=\"list-item\">\n        <div class=\"list-media\">\n          <img class=\"lazyload\" data-src=\"".concat(radio.picUrl, "\">\n          <span class=\"icon icon-play\"></span>\n          </div>\n          <div class=\"list-detail\">\n          <h3 class=\"list-title\">").concat(radio.Ftitle, "</h3>\n        </div>\n      </div>");
     }).join('');
@@ -707,7 +797,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   }
 
   function renderTopList(list) {
-    console.log('list: ', list);
     document.querySelector('#rank-view .toplist').innerHTML = list.map(function (item) {
       return "<li class=\"top-item\">\n      <div class=\"top-item-media\">\n        <a href=\"#\">\n          <img class=\"lazyload\" data-src=\"".concat(item.picUrl, "\">\n        </a>\n      </div>\n      <div class=\"top-item-info\">\n        <h3 class=\"top-item-title ellipsis\">").concat(item.topTitle, "</h3>\n        <ul class=\"top-item-list\">\n          ").concat(songlist(item.songList), "\n        </ul>\n      </div>\n    </li>");
     }).join('');
@@ -720,7 +809,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
     }
   }
 })();
-},{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json","/json/rank.json":"json/rank.json","/scripts/lazyload.js":"scripts/lazyload.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./img":"scripts/img.js","./slider.js":"scripts/slider.js","/json/rec.json":"json/rec.json","/json/rank.json":"json/rank.json","/scripts/lazyload.js":"scripts/lazyload.js","./search.js":"scripts/search.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -748,7 +837,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59450" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61247" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
